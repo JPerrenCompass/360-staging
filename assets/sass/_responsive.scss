@@ -1,0 +1,53 @@
+/**
+**
+** Responsive Styles
+**
+**/
+
+@media (max-width: 1500px) {
+}
+
+@media (max-width: 1260px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1199px) {
+}
+
+/* IPAD LANDSCAPE */
+
+@media (max-width: 1024px) {
+	.detect-device {
+		float: right;
+	}
+}
+
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 940px) {
+}
+
+/*TABLET PORTRAIT*/
+@media (max-width: 767px) {
+}
+
+@media (max-width: 576px) {
+	.detect-device {
+		float: left;
+	}
+}
+
+@media (max-width: 575px) {
+}
+
+/*IPHONE 6 PORTRAIT*/
+@media (max-width: 480px) {	
+}
+
+/*IPHONE 5 PORTRAIT*/
+@media (max-width: 320px) {
+}

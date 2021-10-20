@@ -1,0 +1,95 @@
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+.button {
+  padding: 2rem;
+  padding-top: 3rem;
+  a {
+    padding: 1rem 2rem;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+	cursor: pointer;
+}
+
+.primary-button {
+  a {
+    background-color: $clrPrimaryPink;
+    color: white;
+    &:hover {
+      background-color: black;
+    }
+  }
+}
+
+.jumbotron {
+  padding: 0!important;
+}
+
+.full-width {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.clear {
+	clear: both;
+	height: 0.01%;
+	line-height: 0.01%;
+	margin: 0;
+	padding: 0;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.detect-device {
+	float: none;
+}
+
+.row {display: -webkit-flex;}
+.row:before, .row:after {display: none !important;}
+
+p, a, li {
+font-family: roboto, sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+ul {
+  li {
+ font-family: roboto, sans-serif !important;
+ font-size: 18px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 18px;
+ letter-spacing: 0em;
+ text-align: left;
+ }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: tex gyreadventor-bold, sans-serif;
+  line-height: 30px;
+  letter-spacing: 0em; 
+}
