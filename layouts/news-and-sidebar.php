@@ -16,7 +16,7 @@
         <?php wp_reset_postdata(); ?>
         <?php endif; ?>
         <div class="read-more-row row justify-content-end">
-          <div class="col-12 col-md-4 text-align-right">
+          <div class="col-12 col-md-4 text-right">
             <a href="###"> Read older news <i class="fas fa-chevron-right"></i></a>
           </div>
         </div>
