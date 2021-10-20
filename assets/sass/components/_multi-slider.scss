@@ -44,19 +44,18 @@
           width: 100%;
           min-height: 26rem;
         }
-
-        .right-multislider {
-          .rightslide {
-            padding-top: 7rem;
-            .slide-header {
-              padding-bottom: 1rem;
-            }
-            .slide-content {
-              line-height: 24px;
-            }
-            .slide-link {
-              margin-left: 2rem;
-            }
+      }
+      .right-multislider {
+        .rightslide {
+          padding-top: 6rem;
+          .slide-header {
+            padding-bottom: 1rem;
+          }
+          .slide-content {
+            line-height: 24px;
+          }
+          .slide-link {
+            margin-left: 2rem;
           }
         }
       }

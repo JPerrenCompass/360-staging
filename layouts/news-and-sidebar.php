@@ -15,6 +15,11 @@
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
         <?php endif; ?>
+
+        <div class="col"></div>
+        <div class="col-12 col-md-4">
+          <a href="###"> Read older news <i class="fas fa-chevron-right"></i></a>
+        </div>
       </div>
 
       <div class="sidebar col-12 col-md-4">
