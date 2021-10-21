@@ -4,13 +4,7 @@
       .blog-header-image {
         min-height: 25rem;
         margin-top: 1rem;
-      }
-      .post-title {
-        margin-top: 2rem;
         margin-bottom: 1rem;
-        h1 {
-          font-weight: bold;
-        }
       }
     }
   }
@@ -18,6 +12,19 @@
 .post-content-wrapper {
   margin-top: 1rem;
   .post-content-container {
+    .post-title {
+      margin-bottom: 1rem;
+      h1 {
+        font-weight: bold;
+      }
+    }
+    .post-date {
+      p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+      }
+    }
     .post-content-row {
       .more-blogs {
         h2 {

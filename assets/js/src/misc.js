@@ -20,7 +20,11 @@ $('.right-multislider').slick({
 
 
 function MatchHeight() {
-  $('.blog-row')
+  $('.blog-row, .news-item, .nands-sidebar-item, .tw-match-row')
     .matchHeight({})
   ;
 }
+//Functions that run when all HTML is loaded
+$(document).ready(function() {
+  MatchHeight();
+});

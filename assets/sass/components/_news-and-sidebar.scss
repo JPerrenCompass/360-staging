@@ -1,25 +1,66 @@
-.nands-wraper {
+.nands-wrapper  {
   .nands-container {
     .nands-row {
-      .news {
+      .news-left {
         h2 {
           padding-bottom: 1rem;
         }
         .news-item {
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
           .post-thumbnail {
-            max-height: 5rem;
+            max-height: 7rem;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
           }
-          .post-conten {
-
+          .post-content {
+            color: black;
+            h3 {
+              a {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: black;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+            .nands-excerpt {
+              padding-top: 1rem;
+              display: block;
+            }
+          }
+        }
+        .read-more-row {
+          .read-more-text {
+            a {
+              color: black;
+              font-weight: bold;
+              font-size: 1.3rem;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
           }
         }
       }
       .sidebar {
+        margin-top: 1rem;
+        .nands-sidebar-item {
+          min-height: 6rem;
+          a {
+            width: 100%;
+            height: 100%;
+            .compass-people .perkbox {
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+        .weekly-poll {
 
+        }
       }
     }
   }

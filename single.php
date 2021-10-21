@@ -8,9 +8,6 @@
     <div class="blog-header-row row">
       <div class="blog-header-image col-12" style="background-image: url('<?php echo $postThumbnail;?>');">
       </div>
-      <div class="post-title col-12">
-        <h1><?php the_title();?></h1>
-      </div>
     </div>
   </div>
 </section>
@@ -19,8 +16,13 @@
   <div class="post-content-container container">
     <div class="post-content-row row">
       <div class="blog-container col-8">
+        <div class="post-title">
+          <h1><?php the_title();?></h1>
+        </div>
+        <div class="post-date">
+          <p><?php $post_date = get_the_date('j F, Y'); echo $post_date;?></p>
+        </div>
         <div class="post-content"><?php the_content(); ?></div>
-
         <?php get_template_part( 'flexible-content' ); ?>
       </div>
       <div class="more-blogs col-4">
