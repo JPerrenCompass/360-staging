@@ -17,3 +17,10 @@ $('.right-multislider').slick({
  fade: true,
  focusOnSelect: true
 });
+
+
+function MatchHeight() {
+  $('.blog-row')
+    .matchHeight({})
+  ;
+}
