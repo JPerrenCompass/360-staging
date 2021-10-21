@@ -4,11 +4,15 @@
   .three-wide-container {
     .three-wide-row {
       .three-wide-item {
-        .three-wide-subrow {
-          background-color: white;
-          .row {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+        .three-wide-item-row {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          .tw-match-row {
+            background-color: white;
+            .three-wide-image {
+              margin-left: 0;
+              height: 5rem;
+            }
             .three-wide-content {
               margin-top: 1rem;
               margin-bottom: 1rem;

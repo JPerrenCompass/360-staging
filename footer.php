@@ -25,7 +25,7 @@ $tandcText = get_field('tandc_text', 'option');
               'theme_location'=>'footer-menu',
               'container_class' => 'footer-nav-container') );?>
             </div>
-        <div class="footer-slider col-12 col-md-4">
+        <div class="footer-slider footer-menu col-12 col-md-4">
             <div class="footer-header">
               <h3>New Starters</h3>
             </div>

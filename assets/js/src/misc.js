@@ -17,3 +17,22 @@ $('.right-multislider').slick({
  fade: true,
  focusOnSelect: true
 });
+
+$('.slider-gallery').slick({
+slidesToShow: 5,
+slidesToScroll: 1,
+arrows: true,
+dots: true,
+autoplay:false
+});
+
+
+function MatchHeight() {
+  $('.blog-row, .news-item, .nands-sidebar-item, .tw-match-row')
+    .matchHeight({})
+  ;
+}
+//Functions that run when all HTML is loaded
+$(document).ready(function() {
+  MatchHeight();
+});

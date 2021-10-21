@@ -1,50 +1,58 @@
-<?php get_header();
-$postThumbnail = get_the_post_thumbnail_url();
-$headerImg = get_field('hero_image_replacement'); ?>
+<?php get_header(); ?>
 
-<?php if (get_field('banner_video')) { ?>
+<?php $postThumbnail = get_the_post_thumbnail_url(); ?>
 
-  <div class="jumbotron-banner jumbotron text-center" style="height:24rem;">
-    <video id="video-background" preload muted autoplay loop>
-      <source src="https://www.staging3.compass-schools.org/wp-content/uploads/2021/07/Rolling-small-education-website-video1.mp4" type="video/mp4">
-      <source src="https://www.staging3.compass-schools.org/wp-content/uploads/2021/07/Rolling-small-education-website-video1.mp4" type="video/ogg">
-    </video>
-    <div class="jumbotron-banner-container container">
-      <div class="image-overlay">
+
+<section class="blog-header-wrapper wrapper">
+  <div class="blog-header-container container">
+    <div class="blog-header-row row">
+      <div class="blog-header-image col-12" style="background-image: url('<?php echo $postThumbnail;?>');">
       </div>
-      <h1><?php the_title();?></h1>
     </div>
   </div>
+</section>
 
-  <?php } elseif (get_field('hero_image_replacement')) {
-    $headerImg = get_field('hero_image_replacement'); ?>
-
-  <div class="jumbotron-banner jumbotron text-center" style="background-image: url('<?php echo $headerImg; ?>');">
-    <div class="image-overlay">
-      <h1><?php the_title();?></h1>
-    </div>
-    <div class="jumbotron-banner-container container">
+<section class="post-content-wrapper wrapper">
+  <div class="post-content-container container">
+    <div class="post-content-row row">
+      <div class="blog-container col-8">
+        <div class="post-title">
+          <h1><?php the_title();?></h1>
+        </div>
+        <div class="post-date">
+          <p><?php $post_date = get_the_date('j F, Y'); echo $post_date;?></p>
+        </div>
+        <div class="post-content"><?php the_content(); ?></div>
+        <?php get_template_part( 'flexible-content' ); ?>
+      </div>
+      <div class="more-blogs col-4">
+        <h2>Other Posts</h2>
+        <?php
+        $the_query = new WP_Query( array(
+        'posts_per_page' => 4
+        ));
+        ?>
+        <?php if ( $the_query->have_posts() ) : ?>
+        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+          <?php $postThumbnail = get_the_post_thumbnail_url(get_the_ID(),'full'); ?>
+          <a class="blog-row row" href="<?php the_permalink();?>">
+            <div class="more-blogs-thumbnail col-4" style="background-image: url('<?php echo $postThumbnail; ?>');">
+            </div>
+            <div class="more-blogs-content col-8">
+              <h3><?php the_title(); ?></h3>
+              <p><?php echo wp_trim_words( get_the_content(), 10, '...' ); ?></p>
+            </div>
+          </a>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+        <?php endif; ?>
+        <div class="col-12 read-more-link">
+          <a href="###"> Read older news <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
-<?php } elseif (has_post_thumbnail()) { ?>
-
-  <div class="jumbotron-banner jumbotron text-center" style="background-image: url('<?php echo $postThumbnail;?>');  min-height: 40rem;">
-    <div class="image-overlay">
-      <h1><?php the_title();?></h1>
-    </div>
-    <div class="jumbotron-banner-container container">
-    </div>
-  </div>
-
-<?php } ?>
-
-
-<?php if( get_field("breadcrumb_toggle") == true && function_exists('yoast_breadcrumb') ) {
-  yoast_breadcrumb( '</p><p id=“breadcrumbs”>','</p><p>' );
-} ?>
-
-
-<?php get_template_part( 'flexible-content' ); ?>
 
 <?php get_footer(); ?>

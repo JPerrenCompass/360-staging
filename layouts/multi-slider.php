@@ -27,9 +27,11 @@
             <p class="slide-content">
               <?php echo $rightslidecontent;?>
             </p>
-            <a href="<?php echo $rightslidelink; ?>" class="button slide_link">
-              Read More
-            </a>
+            <div class="primary-button button slide_link">
+              <a href="<?php echo $rightslidelink; ?>">
+                Read More
+              </a>
+            </div>
           </div>
         <?php endwhile;
           endif;

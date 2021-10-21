@@ -14,12 +14,20 @@
   </head>
 
 
-<header id="masthead" class="site-header">
-  <div id="navbar" class="navbar"><nav id="site-navigation" class="navigation main-navigation"><button class="menu-toggle"><!--?php _e( 'Menu', 'twentythirteen' ); ?--></button>
-  <!--?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?-->
-  <!--?php get_search_form(); ?--></nav><!-- #site-navigation -->
-  </div>
+
+<header class="site-header">
+
 </header>
+
+<section class="user-menu-wrapper wrapper">
+  <div class="user-menu-container container">
+    <div class="user-menu-row row">
+      <div class="col-12">
+        <!-- ultimate user stuff goes here, leave blank for now -->
+      </div>
+    </div>
+  </div>
+</section>
 
  <?php if ( function_exists( 'groovy_menu' ) ) { groovy_menu(); } ?>
 

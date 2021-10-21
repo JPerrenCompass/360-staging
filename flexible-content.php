@@ -12,6 +12,8 @@ if( have_rows('flexible_content') ):
             get_template_part('layouts/3-item-banner');
           elseif (get_row_layout() == 'news_and_sidebar'):
             get_template_part('layouts/news-and-sidebar');
+          elseif (get_row_layout() == 'slider_gallery'):
+            get_template_part('layouts/slider-gallery');
         endif;
         $index++;
     endwhile;

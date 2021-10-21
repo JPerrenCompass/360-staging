@@ -6,6 +6,7 @@ body {
 .button {
   padding: 2rem;
   padding-top: 3rem;
+
   a {
     padding: 1rem 2rem;
     &:hover {
@@ -17,10 +18,11 @@ body {
 
 .primary-button {
   a {
-    background-color: $clrPrimaryPink;
+    background-color: black;
     color: white;
     &:hover {
-      background-color: black;
+      background-color: #2CA4E1;
+      color: black;
     }
   }
 }
@@ -91,5 +93,5 @@ h4,
 h5 {
   font-family: tex gyreadventor-bold, sans-serif;
   line-height: 30px;
-  letter-spacing: 0em; 
+  letter-spacing: 0em;
 }
