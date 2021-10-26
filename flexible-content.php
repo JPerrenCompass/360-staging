@@ -14,6 +14,14 @@ if( have_rows('flexible_content') ):
             get_template_part('layouts/news-and-sidebar');
           elseif (get_row_layout() == 'slider_gallery'):
             get_template_part('layouts/slider-gallery');
+          elseif (get_row_layout() == 'newsletters_and_updates'):
+            get_template_part('layouts/newsletters-and-updates');
+          elseif (get_row_layout() == 'downloads_and_sidebar'):
+            get_template_part('layouts/downloadwSidebar');
+          elseif (get_row_layout() == '2_of_3_header'):
+            get_template_part('layouts/two-thirds-header');
+          elseif (get_row_layout() == 'training_menu'):
+            get_template_part('layouts/training-menu');
         endif;
         $index++;
     endwhile;
