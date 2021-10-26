@@ -1,0 +1,38 @@
+.nandu-wrapper {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  .nandu-container {
+    .nandu-row {
+      .nandu-header {
+        h2 {
+          padding-bottom: 1rem;
+        }
+      }
+      .nandu-column {
+        ul {
+          li {
+            list-style: none;
+            text-decoration: none;
+            line-height: 30px;
+            a {
+              color: black;
+            }
+          }
+        }
+      }
+      .nandu-link {
+        a {
+          color: black;
+          font-weight: bold;
+          float: left;
+          padding-top: 1rem;
+          &::after {
+            padding-left: 5px;
+            padding-top: 1px;
+            content: '>';
+          }
+        }
+      }
+    }
+  }
+}

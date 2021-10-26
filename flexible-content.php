@@ -14,7 +14,7 @@ if( have_rows('flexible_content') ):
             get_template_part('layouts/news-and-sidebar');
           elseif (get_row_layout() == 'slider_gallery'):
             get_template_part('layouts/slider-gallery');
-          elseif (get_row_layout() 'newsletters_and_updates'):
+          elseif (get_row_layout() == 'newsletters_and_updates'):
             get_template_part('layouts/newsletters-and-updates');
         endif;
         $index++;

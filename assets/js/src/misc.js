@@ -22,13 +22,13 @@ $('.slider-gallery').slick({
 slidesToShow: 5,
 slidesToScroll: 1,
 arrows: true,
-dots: true,
+dots: false,
 autoplay:false
 });
 
 
 function MatchHeight() {
-  $('.blog-row, .news-item, .nands-sidebar-item, .tw-match-row')
+  $('.blog-row, .news-item, .nands-sidebar-item, .tw-match-row, .nandu-col-list')
     .matchHeight({})
   ;
 }
