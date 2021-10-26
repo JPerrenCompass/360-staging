@@ -1,0 +1,32 @@
+.tm-wrapper {
+  .tm-container {
+    .tm-row {
+      .tm-button {
+        .button-container {
+          a {
+            margin: 1rem;
+            width: 100%;
+            display: block;
+            color: white;
+            padding: 2rem 1rem;
+          }
+        }
+        .tm-item-1 {
+          background-color: #232930;
+        }
+        .tm-item-2 {
+          background-color: #FFDE43;
+          a {
+            color: black;
+          }
+        }
+        .tm-item-3 {
+          background-color: #4E6DB3;
+        }
+        .tm-item-4 {
+          background-color: #E71672;
+        }
+      }
+    }
+  }
+}

@@ -21,7 +21,7 @@ if( have_rows('flexible_content') ):
           elseif (get_row_layout() == '2_of_3_header'):
             get_template_part('layouts/two-thirds-header');
           elseif (get_row_layout() == 'training_menu'):
-            get_templatepart('layouts/training-menu')
+            get_template_part('layouts/training-menu');
         endif;
         $index++;
     endwhile;
