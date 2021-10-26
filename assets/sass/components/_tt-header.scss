@@ -2,19 +2,24 @@
   .tt-header-container {
     .tt-header-row {
       .ttheader-left {
-
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       .ttheader-right {
-        h2 {
-          
-        }
-        p {
+        min-height: 30rem;
+        padding-top: 4rem;
+          h2 {
+
+          }
+          p {
+
+          }
+          a {
+
+          }
 
         }
-        a {
-
-        }
-      }
     }
   }
 }
